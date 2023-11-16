@@ -46,6 +46,29 @@ module.exports = {
     'sort-keys': ['warn', 'asc'],
     'no-param-reassign': 0,
     'no-undef': 0,
+    'vue/attributes-order': ['error', {
+      alphabetical: true,
+      order: [
+        [
+          'CONDITIONALS',
+          'LIST_RENDERING',
+          'TWO_WAY_BINDING',
+          'RENDER_MODIFIERS',
+          'OTHER_DIRECTIVES',
+          'SLOT',
+          'DEFINITION',
+        ],
+        [
+          'ATTR_STATIC',
+          'ATTR_SHORTHAND_BOOL',
+          'GLOBAL',
+          'UNIQUE',
+        ],
+        'ATTR_DYNAMIC',
+        'EVENTS',
+        'CONTENT',
+      ],
+    }],
     'vue/block-lang': ['error', {
       script: { lang: ['js'] },
       style: {
