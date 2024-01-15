@@ -40,6 +40,7 @@ module.exports = {
     'vue',
   ],
   rules: {
+    'max-len': 0,
     'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
     'no-unused-vars': ['error', { argsIgnorePattern: '_' }],
     'object-curly-newline': 'off',
